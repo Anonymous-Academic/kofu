@@ -106,11 +106,6 @@ The script executes the complete evaluation pipeline, including:
 
 ---
 
-## Visualization
-
-### Framework Overview
-
-![Framework](architecture.png)
 
 ### Evidence Query
 
