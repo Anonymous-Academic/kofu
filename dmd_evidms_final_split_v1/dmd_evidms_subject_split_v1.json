@@ -1,0 +1,242 @@
+{
+  "all_subjects": [
+    "gA_1",
+    "gA_5",
+    "gB_10",
+    "gB_6",
+    "gB_7",
+    "gB_9",
+    "gC_13",
+    "gC_14",
+    "gE_28",
+    "gE_29",
+    "gF_23",
+    "gZ_33",
+    "gZ_36",
+    "gZ_37"
+  ],
+  "n_subjects": 14,
+  "n_recordings": 49,
+  "n_native14_intervals": 2275,
+  "n_main11_intervals": 1987,
+  "n_noncanonical3_intervals": 288,
+  "split_decision": "Use true 5-fold subject-disjoint split as final EVI-DMS split v1.",
+  "reason": [
+    "Each fold uses all 14 subjects exactly once across train/val/test.",
+    "Train/val/test are subject-disjoint inside every fold.",
+    "Every fold covers all 11 canonical action classes in train, val, and test.",
+    "Across the five test folds, every subject appears in test exactly once.",
+    "All 49 recordings are assigned to exactly one partition in every fold.",
+    "No recording or interval is dropped by the split file; protocol filtering is explicit."
+  ],
+  "labels": {
+    "protocol_a_main11": [
+      "safe_drive",
+      "texting_right",
+      "phonecall_right",
+      "texting_left",
+      "phonecall_left",
+      "radio",
+      "drinking",
+      "reach_side",
+      "hair_and_makeup",
+      "talking_to_passenger",
+      "reach_backseat"
+    ],
+    "protocol_b_noncanonical3": [
+      "unclassified",
+      "change_gear",
+      "standstill_or_waiting"
+    ],
+    "native14": [
+      "safe_drive",
+      "texting_right",
+      "phonecall_right",
+      "texting_left",
+      "phonecall_left",
+      "radio",
+      "drinking",
+      "reach_side",
+      "hair_and_makeup",
+      "talking_to_passenger",
+      "reach_backseat",
+      "unclassified",
+      "change_gear",
+      "standstill_or_waiting"
+    ]
+  },
+  "splits": {
+    "fold0": {
+      "train": [
+        "gB_10",
+        "gB_6",
+        "gB_7",
+        "gB_9",
+        "gC_14",
+        "gE_28",
+        "gE_29",
+        "gZ_33",
+        "gZ_36"
+      ],
+      "val": [
+        "gA_1",
+        "gA_5",
+        "gF_23"
+      ],
+      "test": [
+        "gC_13",
+        "gZ_37"
+      ]
+    },
+    "fold1": {
+      "train": [
+        "gB_6",
+        "gB_7",
+        "gB_9",
+        "gC_13",
+        "gC_14",
+        "gZ_33",
+        "gZ_36",
+        "gZ_37"
+      ],
+      "val": [
+        "gB_10",
+        "gE_28",
+        "gE_29"
+      ],
+      "test": [
+        "gA_1",
+        "gA_5",
+        "gF_23"
+      ]
+    },
+    "fold2": {
+      "train": [
+        "gA_1",
+        "gA_5",
+        "gB_7",
+        "gB_9",
+        "gC_13",
+        "gF_23",
+        "gZ_33",
+        "gZ_37"
+      ],
+      "val": [
+        "gB_6",
+        "gC_14",
+        "gZ_36"
+      ],
+      "test": [
+        "gB_10",
+        "gE_28",
+        "gE_29"
+      ]
+    },
+    "fold3": {
+      "train": [
+        "gA_1",
+        "gA_5",
+        "gB_10",
+        "gC_13",
+        "gE_28",
+        "gE_29",
+        "gF_23",
+        "gZ_37"
+      ],
+      "val": [
+        "gB_7",
+        "gB_9",
+        "gZ_33"
+      ],
+      "test": [
+        "gB_6",
+        "gC_14",
+        "gZ_36"
+      ]
+    },
+    "fold4": {
+      "train": [
+        "gA_1",
+        "gA_5",
+        "gB_10",
+        "gB_6",
+        "gC_14",
+        "gE_28",
+        "gE_29",
+        "gF_23",
+        "gZ_36"
+      ],
+      "val": [
+        "gC_13",
+        "gZ_37"
+      ],
+      "test": [
+        "gB_7",
+        "gB_9",
+        "gZ_33"
+      ]
+    }
+  },
+  "fold_checks": [
+    {
+      "fold": "fold0",
+      "n_unique_subjects_in_train_val_test": 14,
+      "subject_disjoint": true,
+      "covers_all_subjects": true,
+      "n_recordings_assigned": 49,
+      "n_recordings_total": 49,
+      "no_unassigned_recording": true,
+      "train_main11_coverage": "11/11",
+      "val_main11_coverage": "11/11",
+      "test_main11_coverage": "11/11"
+    },
+    {
+      "fold": "fold1",
+      "n_unique_subjects_in_train_val_test": 14,
+      "subject_disjoint": true,
+      "covers_all_subjects": true,
+      "n_recordings_assigned": 49,
+      "n_recordings_total": 49,
+      "no_unassigned_recording": true,
+      "train_main11_coverage": "11/11",
+      "val_main11_coverage": "11/11",
+      "test_main11_coverage": "11/11"
+    },
+    {
+      "fold": "fold2",
+      "n_unique_subjects_in_train_val_test": 14,
+      "subject_disjoint": true,
+      "covers_all_subjects": true,
+      "n_recordings_assigned": 49,
+      "n_recordings_total": 49,
+      "no_unassigned_recording": true,
+      "train_main11_coverage": "11/11",
+      "val_main11_coverage": "11/11",
+      "test_main11_coverage": "11/11"
+    },
+    {
+      "fold": "fold3",
+      "n_unique_subjects_in_train_val_test": 14,
+      "subject_disjoint": true,
+      "covers_all_subjects": true,
+      "n_recordings_assigned": 49,
+      "n_recordings_total": 49,
+      "no_unassigned_recording": true,
+      "train_main11_coverage": "11/11",
+      "val_main11_coverage": "11/11",
+      "test_main11_coverage": "11/11"
+    },
+    {
+      "fold": "fold4",
+      "n_unique_subjects_in_train_val_test": 14,
+      "subject_disjoint": true,
+      "covers_all_subjects": true,
+      "n_recordings_assigned": 49,
+      "n_recordings_total": 49,
+      "no_unassigned_recording": true,
+      "train_main11_coverage": "11/11",
+      "val_main11_coverage": "11/11",
+      "test_main11_coverage": "11/11"
+    }
+  ]
+}
